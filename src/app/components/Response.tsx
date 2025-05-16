@@ -11,7 +11,7 @@ export default function ResponsePage() {
   return (
     <Box
       sx={{
-        flex:1,
+        flex: 1,
         backgroundColor: "#F5F5F5",
         display: "flex",
         flexDirection: "column",
