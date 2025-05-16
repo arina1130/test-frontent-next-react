@@ -1,5 +1,5 @@
 "use client";
-import { Button, TextField, Box, Typography } from "@mui/material";
+import { TextField, Box, Typography } from "@mui/material";
 import { useState } from "react";
 import CustomButton from "./CustomButton";
 import { useRouter } from "next/navigation";
@@ -30,7 +30,7 @@ export default function ContactForm() {
 
       const data = await res.json();
       router.push(`/response?message=${encodeURIComponent(data.message)}`);
-    } catch (err) {
+    } catch {
       setError("Произошла ошибка при отправке сообщения.");
     }
   };

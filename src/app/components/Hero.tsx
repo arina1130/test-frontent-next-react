@@ -1,11 +1,5 @@
 "use client";
-
 import { Box, Grid, Typography } from "@mui/material";
-import dynamic from "next/dynamic";
-
-const LiteYouTubeEmbed = dynamic(() => import("react-lite-youtube-embed"), {
-  ssr: false,
-});
 
 export default function Hero() {
   return (
